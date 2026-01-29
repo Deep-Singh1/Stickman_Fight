@@ -23,7 +23,8 @@ public class WebSocketConfig implements WebSocketConfigurer {
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         String[] origins = allowedOrigins.split("\\s*,\\s*");
 
-        registry.addHandler(gameHandler, "/ws")
-                .setAllowedOrigins(origins);
+      registry.addHandler(gameHandler, "/ws")
+        .setAllowedOriginPatterns(origins);
+
     }
 }
