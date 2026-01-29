@@ -1,0 +1,18 @@
+# Ignore OS files
+.DS_Store
+
+# Ignore IDE files
+.idea/
+.vscode/
+
+# Ignore frontend build stuff
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+
+# Ignore backend build stuff
+backend/target/
+
+# Logs
+*.log
